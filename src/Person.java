@@ -7,6 +7,10 @@ public class Person {
         this.age = age;
     }
 
+    public boolean isAdult() {
+        return this.getAge() > 18;
+    }
+
     public String getName() {
         return this.name;
     }
@@ -17,5 +21,9 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String toString() {
+        return "Имя " + this.name + " Возраст " + this.age;
     }
 }
