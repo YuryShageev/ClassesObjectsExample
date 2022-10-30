@@ -19,8 +19,12 @@ public class Person {
         return this.age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void increaseAge(int increment) {
+
+        if (increment < 0) {
+            throw new IllegalArgumentException("Инкремент не может быть отрицательным");
+        }
+        this.age = age + increment;
     }
 
     public String toString() {

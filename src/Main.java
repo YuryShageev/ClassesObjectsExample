@@ -8,5 +8,7 @@ public class Main {
             System.out.println("иди в школу");
         }
         System.out.println(sarah);
+        sarah.increaseAge(-20);
+
     }
 }
